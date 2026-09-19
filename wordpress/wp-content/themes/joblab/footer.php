@@ -17,18 +17,18 @@
       <div>
         <h4 class="text-white font-semibold mb-4">Соискателям</h4>
         <ul class="space-y-3 text-sm">
-          <li><a href="#" class="hover:text-white">Поиск работы</a></li>
-          <li><a href="#" class="hover:text-white">Резюме</a></li>
-          <li><a href="#" class="hover:text-white">Карьерные советы</a></li>
+          <li><a href="<?php echo esc_url( get_post_type_archive_link( JL_CPT_VACANCY ) ); ?>" class="hover:text-white">Поиск работы</a></li>
+          <li><a href="<?php echo esc_url( jl_page_url( 'cabinet' ) ); ?>" class="hover:text-white">Мой профиль</a></li>
+          <li><a href="<?php echo esc_url( jl_page_url( 'register', array( 'role' => JL_ROLE_SEEKER ) ) ); ?>" class="hover:text-white">Регистрация</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="text-white font-semibold mb-4">Работодателям</h4>
         <ul class="space-y-3 text-sm">
-          <li><a href="#" class="hover:text-white">Разместить вакансию</a></li>
-          <li><a href="#" class="hover:text-white">База резюме</a></li>
-          <li><a href="#" class="hover:text-white">Тарифы</a></li>
+          <li><a href="<?php echo esc_url( jl_is_employer() ? jl_page_url( 'vacancy-form' ) : jl_page_url( 'register', array( 'role' => JL_ROLE_EMPLOYER ) ) ); ?>" class="hover:text-white">Разместить вакансию</a></li>
+          <li><a href="<?php echo esc_url( jl_page_url( 'candidates' ) ); ?>" class="hover:text-white">База кандидатов</a></li>
+          <li><a href="<?php echo esc_url( get_post_type_archive_link( JL_CPT_COMPANY ) ); ?>" class="hover:text-white">Компании</a></li>
         </ul>
       </div>
 

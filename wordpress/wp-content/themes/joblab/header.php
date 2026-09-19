@@ -22,17 +22,34 @@
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
-        <a href="#" class="hover:text-brand">Вакансии</a>
-        <a href="#" class="hover:text-brand">Резюме</a>
-        <a href="#" class="hover:text-brand">Компании</a>
-        <a href="#" class="hover:text-brand">Карьера</a>
+        <a href="<?php echo esc_url( get_post_type_archive_link( JL_CPT_VACANCY ) ); ?>" class="hover:text-brand">Вакансии</a>
+        <a href="<?php echo esc_url( get_post_type_archive_link( JL_CPT_COMPANY ) ); ?>" class="hover:text-brand">Компании</a>
+        <?php if ( jl_is_employer() ) : ?>
+          <a href="<?php echo esc_url( jl_page_url( 'candidates' ) ); ?>" class="hover:text-brand">Кандидаты</a>
+        <?php endif; ?>
       </nav>
 
-      <a href="#" class="inline-flex items-center gap-2 bg-slate-900 text-white text-xs md:text-sm font-medium px-3 py-2 md:px-5 md:py-2.5 rounded-full hover:bg-slate-800 transition whitespace-nowrap">
-        Для работодателей
-        <svg xmlns="http://www.w3.org/2000/svg" class="hidden md:block w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
-      </a>
+      <div class="flex items-center gap-3">
+        <?php if ( is_user_logged_in() ) : ?>
+          <a href="<?php echo esc_url( jl_page_url( 'cabinet' ) ); ?>"
+             class="inline-flex items-center gap-2 bg-slate-900 text-white text-xs md:text-sm font-medium px-3 py-2 md:px-5 md:py-2.5 rounded-full hover:bg-slate-800 transition whitespace-nowrap">
+            Личный кабинет
+            <svg xmlns="http://www.w3.org/2000/svg" class="hidden md:block w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        <?php else : ?>
+          <a href="<?php echo esc_url( jl_page_url( 'login' ) ); ?>" class="hidden sm:inline text-sm font-medium text-slate-700 hover:text-brand">
+            Войти
+          </a>
+          <a href="<?php echo esc_url( jl_page_url( 'register', array( 'role' => JL_ROLE_EMPLOYER ) ) ); ?>"
+             class="inline-flex items-center gap-2 bg-slate-900 text-white text-xs md:text-sm font-medium px-3 py-2 md:px-5 md:py-2.5 rounded-full hover:bg-slate-800 transition whitespace-nowrap">
+            Для работодателей
+            <svg xmlns="http://www.w3.org/2000/svg" class="hidden md:block w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        <?php endif; ?>
+      </div>
     </div>
   </header>
