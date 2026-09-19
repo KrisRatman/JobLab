@@ -1,0 +1,21 @@
+# Черновики и скриншоты
+/Escise/
+
+# WordPress: в репозиторий попадает только своя тема,
+# ядро, плагины, чужие темы, конфиг и загрузки — нет
+/wordpress/*
+!/wordpress/wp-content/
+/wordpress/wp-content/*
+!/wordpress/wp-content/themes/
+/wordpress/wp-content/themes/*
+!/wordpress/wp-content/themes/joblab/
+
+# Логи
+*.log
+
+# ОС и редакторы
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

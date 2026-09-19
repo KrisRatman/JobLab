@@ -1,0 +1,273 @@
+<?php get_header(); ?>
+
+  <!-- Hero -->
+  <section class="max-w-7xl mx-auto px-6 pt-16 pb-14">
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight max-w-2xl">
+      Найдите работу своей мечты
+    </h1>
+    <p class="mt-6 text-lg text-slate-600 max-w-2xl">
+      Самая большая база вакансий в России. Более 100 000 свежих предложений от проверенных компаний.
+    </p>
+
+    <!-- Search bar -->
+    <div class="mt-8 flex flex-col md:flex-row gap-3 md:gap-0 md:bg-white">
+      <div class="flex-1 flex items-center gap-3 border border-slate-200 md:border-r-0 rounded-xl md:rounded-r-none px-4 py-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/>
+        </svg>
+        <input type="text" placeholder="Должность, компания или навык" class="w-full outline-none placeholder:text-slate-400 text-sm">
+      </div>
+      <div class="flex-1 flex items-center gap-3 border border-slate-200 md:border-x-0 rounded-xl md:rounded-none px-4 py-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-slate-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        <input type="text" placeholder="Город или регион" class="w-full outline-none placeholder:text-slate-400 text-sm">
+      </div>
+      <button class="bg-brand hover:bg-brand-dark transition text-white font-medium px-8 py-4 rounded-xl md:rounded-l-none text-sm whitespace-nowrap">
+        Найти работу
+      </button>
+    </div>
+
+    <!-- Popular tags -->
+    <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+      <span class="text-brand font-medium">Популярные категории:</span>
+      <a href="#" class="text-slate-600 hover:text-brand">IT и разработка</a>
+      <a href="#" class="text-slate-600 hover:text-brand">Маркетинг</a>
+      <a href="#" class="text-slate-600 hover:text-brand">Финансы</a>
+      <a href="#" class="text-slate-600 hover:text-brand">Логистика</a>
+      <a href="#" class="text-slate-600 hover:text-brand">Медицина</a>
+    </div>
+  </section>
+
+  <!-- Popular categories -->
+  <section class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold">Популярные категории</h2>
+        <a href="#" class="text-sm font-medium text-brand hover:text-brand-dark">Все категории</a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6L4 12l6 6M14 6l6 6-6 6"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold">IT и разработка</h3>
+          <p class="text-sm text-slate-500 mt-1">12 400 вакансий</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 7v11a2 2 0 002 2h14a2 2 0 002-2V7M3 7l2-4h14l2 4M9 11h6"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold">Менеджмент</h3>
+          <p class="text-sm text-slate-500 mt-1">8 200 вакансий</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10H5a2 2 0 01-2-2V9a2 2 0 012-2h4m0 10h6m-6-10h6m0 0h4a2 2 0 012 2v6a2 2 0 01-2 2h-4m0-10v10"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold">Финансы</h3>
+          <p class="text-sm text-slate-500 mt-1">5 100 вакансий</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13h4l3 8 4-16 3 8h4"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold">Логистика</h3>
+          <p class="text-sm text-slate-500 mt-1">4 500 вакансий</p>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.418-3.04-8-6.36-8-10.5A5.5 5.5 0 0112 5.5a5.5 5.5 0 018 5c0 4.14-3.582 7.46-8 10.5z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold">Медицина</h3>
+          <p class="text-sm text-slate-500 mt-1">3 200 вакансий</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fresh vacancies -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold">Свежие вакансии</h2>
+        <button class="flex items-center gap-1 text-sm font-medium text-brand hover:text-brand-dark">
+          Сначала новые
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="space-y-4">
+        <article class="flex items-center justify-between border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div>
+            <h3 class="font-semibold text-lg">Senior Frontend Developer</h3>
+            <p class="text-sm text-slate-500 mt-1">Yandex</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-slate-500">
+              <span class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Москва
+              </span>
+              <span class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3"/></svg>
+                Полный день
+              </span>
+            </div>
+          </div>
+          <div class="text-right shrink-0">
+            <p class="font-bold text-lg">250 000 ₽</p>
+            <p class="text-sm text-slate-400">в месяц</p>
+          </div>
+        </article>
+
+        <article class="flex items-center justify-between border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div>
+            <h3 class="font-semibold text-lg">Product Manager</h3>
+            <p class="text-sm text-slate-500 mt-1">Sber</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-slate-500">
+              <span class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Москва
+              </span>
+              <span class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3"/></svg>
+                Полный день
+              </span>
+            </div>
+          </div>
+          <div class="text-right shrink-0">
+            <p class="font-bold text-lg">280 000 ₽</p>
+            <p class="text-sm text-slate-400">в месяц</p>
+          </div>
+        </article>
+
+        <article class="flex items-center justify-between border border-slate-200 rounded-2xl p-6 hover:shadow-md transition">
+          <div>
+            <h3 class="font-semibold text-lg">UX/UI Designer</h3>
+            <p class="text-sm text-slate-500 mt-1">Tinkoff</p>
+            <div class="flex items-center gap-4 mt-2 text-sm text-slate-500">
+              <span class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Удаленно
+              </span>
+              <span class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3"/></svg>
+                Гибкий график
+              </span>
+            </div>
+          </div>
+          <div class="text-right shrink-0">
+            <p class="font-bold text-lg">180 000 ₽</p>
+            <p class="text-sm text-slate-400">в месяц</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA banner with carousel -->
+  <section class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="bg-brand rounded-3xl px-8 py-14 md:px-14 flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 text-white">
+          <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">
+            Найдите лучших специалистов для вашей команды
+          </h2>
+          <p class="mt-5 text-blue-100 max-w-lg">
+            Публикуйте вакансии, собирайте резюме и управляйте процессом найма в одном удобном интерфейсе.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#" class="bg-white text-brand font-medium px-6 py-3 rounded-xl hover:bg-blue-50 transition text-sm">
+              Разместить вакансию
+            </a>
+            <a href="#" class="border border-white/60 text-white font-medium px-6 py-3 rounded-xl hover:bg-white/10 transition text-sm">
+              Узнать больше
+            </a>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="w-full md:w-[380px] shrink-0">
+          <div id="carousel" class="relative aspect-[4/3.6] rounded-2xl overflow-hidden bg-white/20">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/team-slide-1.png' ); ?>" alt="Специалист за работой" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/img/team-slide-2.png' ); ?>" alt="Специалист на объекте" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+              <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white" data-index="0" aria-label="Слайд 1"></button>
+              <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/50" data-index="1" aria-label="Слайд 2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career resources -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-8">Карьерные ресурсы</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="border border-slate-200 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg">Готовимся к собеседованию</h3>
+          <p class="text-sm text-slate-500 mt-2">Полное руководство по подготовке к техническому интервью.</p>
+          <a href="#" class="inline-flex items-center gap-1 text-sm font-medium text-brand hover:text-brand-dark mt-4">
+            Читать статью
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </article>
+
+        <article class="border border-slate-200 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 7v11a2 2 0 002 2h14a2 2 0 002-2V7M3 7l2-4h14l2 4M9 11h6"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg">Как написать резюме</h3>
+          <p class="text-sm text-slate-500 mt-2">Советы по составлению резюме, которое точно попадёт в шорт-лист.</p>
+          <a href="#" class="inline-flex items-center gap-1 text-sm font-medium text-brand hover:text-brand-dark mt-4">
+            Читать статью
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </article>
+
+        <article class="border border-slate-200 rounded-2xl p-6">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10H5a2 2 0 01-2-2V9a2 2 0 012-2h4m0 10h6m-6-10h6m0 0h4a2 2 0 012 2v6a2 2 0 01-2 2h-4m0-10v10"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg">Рынок труда в 2024</h3>
+          <p class="text-sm text-slate-500 mt-2">Аналитический отчёт о самых востребованных профессиях.</p>
+          <a href="#" class="inline-flex items-center gap-1 text-sm font-medium text-brand hover:text-brand-dark mt-4">
+            Читать статью
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<?php get_footer(); ?>
